@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subject_database.fxui.AdminController">
+   <top>
+      <VBox prefHeight="89.0" prefWidth="1920.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <GridPane alignment="CENTER" style="-fx-background-color: #c3073f;" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="325.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="1395.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="750.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #6b6b6b;">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <children>
+                  <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1009.0" prefWidth="325.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="175.0" prefWidth="325.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="809.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="82.0" minHeight="82.0" prefHeight="82.0" valignment="CENTER" vgrow="NEVER" />
+                     </rowConstraints>
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <GridPane prefHeight="809.0" prefWidth="325.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label fx:id="nameLabel" alignment="CENTER" layoutX="148.0" layoutY="81.0" text="Label" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="57.0">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <Label fx:id="dobLabel" alignment="CENTER" layoutX="142.0" layoutY="70.0" text="Label" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="57.0">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                       <children>
+                                          <Label fx:id="usernameLabel" alignment="CENTER" layoutX="142.0" layoutY="70.0" text="Label" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="57.0">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                       <children>
+                                          <Label fx:id="fieldOfStudyLabel" alignment="CENTER" layoutX="139.0" layoutY="67.0" text="Label" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="57.0">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <Button minWidth="75.0" mnemonicParsing="false" onAction="#onLogOut" prefHeight="45.0" prefWidth="158.0" snapToPixel="false" text="Log out" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #909090;" tabClosingPolicy="UNAVAILABLE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+              <tabs>
+                <Tab text="Subjects">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane prefHeight="858.0" prefWidth="1395.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="775.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="82.0" minHeight="27.0" percentHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TableView fx:id="allSubjectsTable" prefHeight="636.0" prefWidth="1395.0" style="-fx-background-color: #909090;">
+                                       <columns>
+                                          <TableColumn fx:id="adminSubjectCodeColumn" maxWidth="1.7976931348623157E308" minWidth="200.0" prefWidth="452.0" text="Subject code" />
+                                          <TableColumn fx:id="adminSubjectNameColumn" maxWidth="1.7976931348623157E308" minWidth="200.0" prefWidth="1067.0" text="Subject name" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="55.0" prefWidth="1400.0" GridPane.rowIndex="1">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <TextField fx:id="adminAddSubjectCode" alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="45.0" prefWidth="150.0" promptText="Subject Code">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <TextField fx:id="adminAddSubjectName" alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="45.0" prefWidth="200.0" promptText="Subject name" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <GridPane.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <Button maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#onAdminAddSubject" prefHeight="45.0" prefWidth="158.0" text="Add subject" GridPane.columnIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <TextField fx:id="adminRemoveSubject" alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="45.0" prefWidth="150.0" promptText="Subject Code" GridPane.columnIndex="4">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <Button maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#onAdminDeleteSubject" prefHeight="45.0" prefWidth="158.0" text="Remove subject" GridPane.columnIndex="5">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <TextArea fx:id="adminSubjectOutput" editable="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="45.0" prefWidth="200.0" GridPane.columnIndex="6">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </GridPane.margin>
+                                          </TextArea>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Users">
+                  <content>
+                    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane prefHeight="858.0" prefWidth="1395.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="829.0" minHeight="10.0" prefHeight="762.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="424.0" minHeight="10.0" percentHeight="10.0" prefHeight="96.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TableView fx:id="allUsersTable" prefHeight="858.0" prefWidth="1395.0" style="-fx-background-color: #4e4e50;">
+                                      <columns>
+                                        <TableColumn fx:id="userIdColumn" editable="false" minWidth="64.0" prefWidth="83.0" text="ID" />
+                                          <TableColumn fx:id="usernameColumn" editable="false" minWidth="200.0" prefWidth="279.0" text="Username" />
+                                        <TableColumn fx:id="firstnameColumn" editable="false" minWidth="224.0" prefWidth="225.0" text="Firstname" />
+                                          <TableColumn fx:id="surnameColumn" editable="false" minWidth="222.0" prefWidth="236.0" text="Surname" />
+                                          <TableColumn fx:id="dobColumn" editable="false" minWidth="0.0" prefWidth="168.0" text="Date of birth" />
+                                          <TableColumn fx:id="fieldOfStudyColumn" editable="false" minWidth="134.0" prefWidth="243.0" text="Field of study" />
+                                          <TableColumn fx:id="adminColumn" editable="false" maxWidth="1.7976931348623157E308" minWidth="74.0" prefWidth="160.0" text="Admin" />
+                                      </columns>
+                                    </TableView>
+                                    <GridPane GridPane.rowIndex="1">
+                                      <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Button maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#onSetAdmin" prefHeight="45.0" prefWidth="158.0" text="Set admin" GridPane.columnIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <TextField fx:id="userIdForAdminEdit" alignment="CENTER" minHeight="25.0" minWidth="75.0" prefHeight="45.0" prefWidth="158.0" promptText="User-ID" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <GridPane.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <Button maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#onAdminDeleteUser" prefHeight="45.0" prefWidth="158.0" text="Delete user" GridPane.columnIndex="4">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#onRemoveAdmin" prefHeight="45.0" prefWidth="158.0" text="Remove admin" GridPane.columnIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <TextArea fx:id="adminEditsUser" editable="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="45.0" prefWidth="200.0" GridPane.columnIndex="5">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </GridPane.margin>
+                                          </TextArea>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </GridPane>
+   </center>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

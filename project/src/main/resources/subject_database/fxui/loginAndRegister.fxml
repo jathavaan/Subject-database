@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="1080.0" maxWidth="1920.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subject_database.fxui.LoginAndRegisterController">
+   <center>
+      <GridPane prefHeight="880.0" prefWidth="1720.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+          <AnchorPane minHeight="300.0" minWidth="250.0" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: #909090;">
+               <children>
+                  <VBox alignment="CENTER" layoutX="380.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="460.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="75.0">
+                     <padding>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                     </padding>
+                     <children>
+                        <GridPane prefHeight="880.0" prefWidth="860.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="300.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="32.0" />
+                                 </font>
+                              </Text>
+                              <GridPane minHeight="25.0" minWidth="75.0" prefHeight="64.0" prefWidth="264.0" GridPane.rowIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.0" minWidth="10.0" percentWidth="75.0" prefWidth="272.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="313.0" minWidth="85.0" percentWidth="25.0" prefWidth="88.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TextField id="logInUsername" fx:id="logInUsername" alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="45.0" prefHeight="64.0" prefWidth="330.0" promptText="Username">
+                                       <GridPane.margin>
+                                          <Insets bottom="25.0" right="5.0" top="25.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </padding>
+                                    </TextField>
+                                    <TextField id="logInUsername" fx:id="loginUserId" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="45.0" prefHeight="64.0" prefWidth="330.0" promptText="ID" GridPane.columnIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="25.0" left="5.0" top="25.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                              </GridPane>
+                              <PasswordField id="logInPassword" fx:id="logInPassword" alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="64.0" prefWidth="264.0" promptText="Password" GridPane.rowIndex="2">
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </PasswordField>
+                              <Button maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#onUserLogin" prefHeight="65.0" prefWidth="360.0" text="Login" GridPane.rowIndex="3" />
+                              <TextArea id="logInOutput" fx:id="logInOutput" editable="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="64.0" prefWidth="360.0" GridPane.rowIndex="4">
+                                 <effect>
+                                    <Blend />
+                                 </effect>
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="300.0" minWidth="250.0" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: #6b6b6b;" GridPane.columnIndex="1">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="460.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="75.0">
+                     <padding>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                     </padding>
+                     <children>
+                        <GridPane prefHeight="880.0" prefWidth="860.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="300.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Register" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="32.0" />
+                                 </font>
+                              </Text>
+                              <TextField id="registerFirstname" fx:id="registerFirstname" alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="75.0" prefWidth="430.0" promptText="Firstname" GridPane.rowIndex="1">
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField id="registerSurname" fx:id="registerSurname" alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="75.0" prefWidth="430.0" promptText="Surname" GridPane.rowIndex="2">
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <DatePicker id="registerDob" fx:id="registerDob" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="75.0" prefWidth="430.0" promptText="Date of birth" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </DatePicker>
+                              <TextField id="registerFieldOfStudy" fx:id="registerFieldOfStudy" alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="75.0" prefWidth="430.0" promptText="Field of study" GridPane.rowIndex="4">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField id="registerUsername" fx:id="registerUsername" alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="75.0" prefWidth="430.0" promptText="Username" GridPane.rowIndex="5">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <PasswordField id="registerPassword" fx:id="registerPassword" alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="75.0" prefWidth="430.0" promptText="Password" GridPane.rowIndex="6">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </PasswordField>
+                              <Button maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#onUserRegister" prefHeight="75.0" prefWidth="430.0" text="Register" GridPane.rowIndex="7">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <TextArea id="logInOutput" fx:id="registerOutput" editable="false" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="75.0" prefHeight="75.0" prefWidth="430.0" GridPane.rowIndex="8">
+                                 <GridPane.margin>
+                                    <Insets top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>
